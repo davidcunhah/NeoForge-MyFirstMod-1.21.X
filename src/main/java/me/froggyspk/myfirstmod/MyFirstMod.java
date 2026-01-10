@@ -1,7 +1,7 @@
 package me.froggyspk.myfirstmod;
 
+import me.froggyspk.myfirstmod.block.ModBlocks;
 import me.froggyspk.myfirstmod.item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -44,6 +44,7 @@ public class MyFirstMod {
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
