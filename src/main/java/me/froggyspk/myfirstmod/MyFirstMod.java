@@ -1,6 +1,7 @@
 package me.froggyspk.myfirstmod;
 
 import me.froggyspk.myfirstmod.block.ModBlocks;
+import me.froggyspk.myfirstmod.item.ModCreativeModeTabs;
 import me.froggyspk.myfirstmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -43,6 +44,7 @@ public class MyFirstMod {
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
     }
@@ -53,16 +55,7 @@ public class MyFirstMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.BISMUTH);
-            event.accept(ModItems.RAW_BISMUTH);
-            event.accept(ModItems.AMONG_US);
-        }
 
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept(ModBlocks.BISMUTH_BLOCK);
-            event.accept(ModBlocks.BISMUTH_ORE);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
