@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "myfirstmod:item/among_us"
+    "layer0": "myfirstmod:item/cooked_among_us"
   }
 }

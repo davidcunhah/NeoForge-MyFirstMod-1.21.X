@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 600,
+  "experience": 0.5,
+  "group": "among_us",
+  "ingredient": {
+    "item": "myfirstmod:among_us"
+  },
+  "result": {
+    "id": "myfirstmod:cooked_among_us"
+  }
+}

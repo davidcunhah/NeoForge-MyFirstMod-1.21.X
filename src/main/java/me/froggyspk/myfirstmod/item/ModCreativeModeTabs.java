@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BISMUTH);
                         output.accept(ModItems.RAW_BISMUTH);
                         output.accept(ModItems.AMONG_US);
+                        output.accept(ModItems.COOKED_AMONG_US);
                     })
                     .build());
 
